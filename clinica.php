@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 //Definicion de pacientes
 $aPacientes = array();
 $aPacientes[] = array(
@@ -43,10 +47,11 @@ $aPacientes[] = array(
                     <TBODy>
                         <?php for ($i=0; $i < count($aPacientes); $i++){ ?>
                         <TR>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><?php echo $aPacientes[$i]["dni"]; ?></td>
+                            <td><?php echo $aPacientes[$i]["nombre"]; ?></td>
+                            <td><?php echo $aPacientes[$i]["edad"]; ?></td>
+                            <td><?php echo $aPacientes[$i]["peso"]; ?></td>
+                            
                         </TR>
                         <?php } ?> 
                     </TBODy>
