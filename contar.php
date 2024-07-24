@@ -9,7 +9,7 @@ function contar($aArray){
 }
 
 //Uso
-$aNotas = array(9. 8, 9.50, 4, 7, 8);
+$aNotas = array(9, 8, 9.50, 4, 7, 8);
 $aPacientes = array();
 $aPacientes[] = array(
     "dni" => "33.765.012",
