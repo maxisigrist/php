@@ -55,7 +55,10 @@ $aPacientes[] = array(
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($aPacientes as $paciente) { ?>
+                        <?php foreach ($aPacientes as $paciente) {
+                            print_r($paciente);
+                            exit;
+                             ?>
                             <tr>
                                 <td><?php echo $paciente["dni"]; ?></td>
                                 <td><?php echo $paciente["nombre"]; ?></td>
