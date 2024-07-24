@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 //Definicion
 function calcularNeto($bruto){
-    
+    return $bruto - ($bruto * 0.17);
 }
 
 //Uso
