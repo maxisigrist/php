@@ -46,7 +46,7 @@ $aPacientes[] = array(
                         <th></th>
                     </thead>
                     <TBODy>
-                        <?php for ($i=0; $i < count($aPacientes); $i++){ ?>
+                        <?php foreach ($aPacientes as $aPacientes){ ?>
                         <TR>
                             <td><?php echo $aPacientes[$i]["dni"]; ?></td>
                             <td><?php echo $aPacientes[$i]["nombre"]; ?></td>
