@@ -4,8 +4,13 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 //Definicion
-function contar($aArray){
-
+function contar($aArray)
+{
+    $contador = 0;
+    foreach ($aArray as $item) {
+        $contador++;
+    }
+    return $contador;
 }
 
 //Uso
@@ -36,19 +41,22 @@ $aPacientes[] = array(
     "peso" => 77,
 );
 $aProductos = array();
-$aProductos[] = array("nombre" => "Smart TV 55\" 4K UHD",
+$aProductos[] = array(
+    "nombre" => "Smart TV 55\" 4K UHD",
     "marca" => "Hitachi",
     "modelo" => "554KS20",
     "stock" => 60,
     "precio" => 58000
 );
-$aProductos[] = array("nombre" => "Samsung Galaxy A30 Blanco",
+$aProductos[] = array(
+    "nombre" => "Samsung Galaxy A30 Blanco",
     "marca" => "Samsung",
     "modelo" => "Galaxy A30",
     "stock" => 0,
     "precio" => 22000,
 );
-$aProductos[] = array("nombre" => "Aire Acondicionado Split Inverter Frío/Calor Surrey 2900F",
+$aProductos[] = array(
+    "nombre" => "Aire Acondicionado Split Inverter Frío/Calor Surrey 2900F",
     "marca" => "Surrey",
     "modelo" => "553AIQ1201E",
     "stock" => 5,
@@ -57,5 +65,4 @@ $aProductos[] = array("nombre" => "Aire Acondicionado Split Inverter Frío/Calor
 echo "Cantidad de productos: " . contar($aProductos);
 echo "Cantidad de pacientes: " . contar($aPacientes);
 echo "Cantidad de Notas: " . contar($aNotas);
-
 ?>
