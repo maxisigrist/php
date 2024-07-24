@@ -18,6 +18,12 @@ $aPacientes[] = array(
     "peso" => 79,
 );
 $aPacientes[] = array(
+    "dni" => "32.599.825",
+    "nombre" => "Maximiliano Sigrist",
+    "edad" => 37,
+    "peso" => 80,
+);
+$aPacientes[] = array(
     "dni" => "11.568.778",
     "nombre" => "Martín Perez",
     "edad" => 26,
