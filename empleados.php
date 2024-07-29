@@ -9,6 +9,9 @@ $aEmpleados[] = array("dni" => 40874456, "nombre" => "Ana Del Valle", "bruto" =>
 $aEmpleados[] = array("dni" => 67567565, "nombre" => "Andrés Perez", "bruto" => 100000);
 $aEmpleados[] = array("dni" => 75744545, "nombre" => "Victoria Luz", "bruto" => 70000);
 
+function calcularNeto($bruto){
+    return $bruto - ($bruto * 0.17);
+}
 
 ?>
 <!DOCTYPE html>
@@ -42,7 +45,7 @@ $aEmpleados[] = array("dni" => 75744545, "nombre" => "Victoria Luz", "bruto" => 
                             <tr>
                                 <td><?php echo $empleado["dni"]?></td>
                                 <td><?php echo $empleado["nombre"]?></td>
-                                <td><?php echo $empleado["bruto"]?></td>
+                                <td><?php echo $bruto["bruto"]?></td>
                             </tr>
                             <?php }?>
                     </tbody>
