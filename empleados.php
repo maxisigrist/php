@@ -45,7 +45,7 @@ function calcularNeto($bruto){
                             <tr>
                                 <td><?php echo $empleado["dni"]; ?></td>
                                 <td><?php echo mb_strtoupper($empleado["nombre"]); ?></td>
-                                <td><?php echo $calcularNeto($empleado["bruto"]); ?></td>
+                                <td>$<?php echo number_format(calcularNeto($empleado["bruto"]), 2, ",", "."); ?></td>
                             </tr>
                             <?php }?>
                     </tbody>
