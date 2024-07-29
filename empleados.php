@@ -45,7 +45,7 @@ function calcularNeto($bruto){
                             <tr>
                                 <td><?php echo $empleado["dni"]?></td>
                                 <td><?php echo $empleado["nombre"]?></td>
-                                <td><?php echo $bruto["bruto"]?></td>
+                                <td><?php echo $calcularNeto["bruto"]?></td>
                             </tr>
                             <?php }?>
                     </tbody>
