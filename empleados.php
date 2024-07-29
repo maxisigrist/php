@@ -40,9 +40,9 @@ $aEmpleados[] = array("dni" => 75744545, "nombre" => "Victoria Luz", "bruto" => 
                     <tbody>
                         <?php foreach($aEmpleados as $empleado){ ?>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><?php echo $empleado["dni"]?></td>
+                                <td><?php echo $empleado["nombre"]?></td>
+                                <td><?php echo $empleado["bruto"]?></td>
                             </tr>
                             <?php }?>
                     </tbody>
