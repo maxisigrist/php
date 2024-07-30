@@ -3,7 +3,6 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
 if ($_POST) {
     $nombre = $_POST["txtNombre"];
     $dni = $_POST["txtDni"];
@@ -24,7 +23,7 @@ if ($_POST) {
 <body>
     <main class="container">
         <div class="row">
-            <div class="col12 py-5 text-center">
+            <div class="col-12 py-5 text-center">
                 <h1>Resultado de formulario</h1>
             </div>
         </div>
@@ -35,7 +34,7 @@ if ($_POST) {
                         <tr>
                             <th>Nombre</th>
                             <th>DNI</th>
-                            <th>Telefono</th>
+                            <th>Teléfono</th>
                             <th>Edad</th>
                         </tr>
                     </thead>
@@ -52,4 +51,5 @@ if ($_POST) {
         </div>
     </main>
 </body>
+
 </html>
