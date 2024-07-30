@@ -17,26 +17,31 @@ error_reporting(E_ALL);
 <body>
     <main class="container">
         <div class="row">
+            <div class="col-12 py-5 text-center">
+                <h1>Formulario de datos personales</h1>
+        </div>
+        </div>
+        <div class="row">
             <div class="col-12">
                 <form action="resultado.php" method="POST">
-                    <div>
+                    <div class="pb-3">
                         <label for="txtNombre">Nombre</label>
                         <input type="text" name="txtNombre" id="txtNombre" class="form-control">
                     </div>
-                    <div>
+                    <div class="pb-3">
                         <label for="txtNombre">DNI</label>
                         <input type="text" name="txtDni" id="txtDni" class="form-control">
                     </div>
-                    <div>
+                    <div class="pb-3">
                         <label for="txtNombre">Telefono</label>
                         <input type="text" name="txtTelefono" id="txtTelefono" class="form-control">
                     </div>
-                    <div>
+                    <div class="pb-3">
                         <label for="txtNombre">Edad</label>
                         <input type="number" name="txtEdad" id="txtEdad" class="form-control">
                     </div>
-                    <div>
-                        <button type="submit">
+                    <div class="pb-3">
+                        <button type="submit" class="btn btn-primary">
                             ENVIAR
                         </button>
                     </div>
