@@ -11,7 +11,6 @@ if ($_POST) {
     $edad = $_POST["txtEdad"];
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,7 +25,7 @@ if ($_POST) {
     <main class="container">
         <div class="row">
             <div class="col12 py-5 text-center">
-                <h1>Resultado de fotmulario</h1>
+                <h1>Resultado de formulario</h1>
             </div>
         </div>
         <div class="row">
@@ -42,18 +41,15 @@ if ($_POST) {
                     </thead>
                     <tbody>
                         <tr>
-                            <td><?php echo $Nombre; ?></td>
-                            <td><?php echo $Dni; ?></td>
-                            <td><?php echo $Telefono; ?></td>
-                            <td><?php echo $Edad; ?></td>
+                            <td><?php echo $nombre; ?></td>
+                            <td><?php echo $dni; ?></td>
+                            <td><?php echo $telefono; ?></td>
+                            <td><?php echo $edad; ?></td>
                         </tr>
                     </tbody>
-
                 </table>
             </div>
         </div>
-
     </main>
 </body>
-
 </html>
