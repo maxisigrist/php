@@ -56,6 +56,11 @@ $aAlumnos[] = array("nombre" => "maxi sigrist", "notas" => array(6,6));
                 </table>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 my-3">
+                <h5>Promedio de la cursada: <?php echo number_format($sumPromedios / count($aAlumnos), 2, ",", "."); ?></h5>
+            </div>
+        </div>
     </main>
 </body>
 </html>
