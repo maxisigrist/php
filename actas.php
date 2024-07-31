@@ -21,6 +21,12 @@ $aAlumnos[] = array("nombre" => "tomas ponce", "notas" => array(5,8));
 $aAlumnos[] = array("nombre" => "meli alleman", "notas" => array(9,7));
 $aAlumnos[] = array("nombre" => "maxi sigrist", "notas" => array(6,6));
 
+// Calcula el promedio general de la cursada
+$sumPromedios = 0;
+foreach ($aAlumnos as $alumno) {
+    $sumPromedios += promediar($alumno["notas"]);
+}
+$promedioGeneral = $sumPromedios / count($aAlumnos);
 ?>
 
 <!DOCTYPE html>
