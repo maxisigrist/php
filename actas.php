@@ -16,10 +16,10 @@ function promediar($aNotas){
 }
 
 $aAlumnos = array();
-$aAlumnos[] = array("nombre" => "carlos puerta", "notas" => array(5,4));
-$aAlumnos[] = array("nombre" => "tomas ponce", "notas" => array(5,8));
-$aAlumnos[] = array("nombre" => "meli alleman", "notas" => array(9,7));
-$aAlumnos[] = array("nombre" => "maxi sigrist", "notas" => array(6,6));
+$aAlumnos[] = array("nombre" = "carlos puerta", "notas" => array(5,4));
+$aAlumnos[] = array("nombre" = "tomas ponce", "notas" => array(5,8));
+$aAlumnos[] = array("nombre" = "meli alleman", "notas" => array(9,7));
+$aAlumnos[] = array("nombre" = "maxi sigrist", "notas" => array(6,6));
 
 ?>
 
