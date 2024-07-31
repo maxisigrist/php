@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
+//promedia las notas
 function promediar($aNotas){
     $sumatotal = 0;
     foreach ($aNotas as $nota) {
@@ -14,7 +14,7 @@ function promediar($aNotas){
 
     return $promedio;
 }
-
+//datos con las notas
 $aAlumnos = array();
 $aAlumnos[] = array("nombre" => "carlos puerta", "notas" => array(5,4));
 $aAlumnos[] = array("nombre" => "tomas ponce", "notas" => array(5,8));
