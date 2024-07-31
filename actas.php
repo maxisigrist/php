@@ -46,10 +46,10 @@ $aAlumnos[] = array("nombre" => "maxi sigrist", "notas" => array(6,6));
                     <tbody>
                     <?php foreach($aAlumnos as $alumno) : ?>
                     <tr>    
-                            <td><?php echo $alumno["nombre"]; ?>></td>
-                            <td><?php echo $alumno["notas"][0]; ?>></td>
-                            <td><?php echo $alumno["notas"][1]; ?>></td>
-                            <td><?php echo promediar($alumno["notas"]); ?>></td>
+                            <td><?php echo $alumno["nombre"]; ?></td>
+                            <td><?php echo $alumno["notas"][0]; ?></td>
+                            <td><?php echo $alumno["notas"][1]; ?></td>
+                            <td><?php echo promediar($alumno["notas"]); ?></td>
                     </tr>     
                     <?php endforeach; ?>
                     </tbody>
