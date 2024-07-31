@@ -15,11 +15,11 @@ function promediar($aNotas){
     return $promedio;
 }
 
-$alumnos = array();
-$alumnos[] = array("nombre" => "carlos puerta", "notas" => array(5,4));
-$alumnos[] = array("nombre" => "tomas ponce", "notas" => array(5,8));
-$alumnos[] = array("nombre" => "meli alleman", "notas" => array(9,7));
-$alumnos[] = array("nombre" => "maxi sigrist", "notas" => array(6,6));
+$aAlumnos = array();
+$aAlumnos[] = array("nombre" => "carlos puerta", "notas" => array(5,4));
+$aAlumnos[] = array("nombre" => "tomas ponce", "notas" => array(5,8));
+$aAlumnos[] = array("nombre" => "meli alleman", "notas" => array(9,7));
+$aAlumnos[] = array("nombre" => "maxi sigrist", "notas" => array(6,6));
 
 ?>
 
