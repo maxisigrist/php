@@ -44,11 +44,14 @@ $alumnos[] = array("nombre" => "maxi sigrist", "notas" => array(6,6));
                         <th>Promedio</th>
                     </thead>
                     <tbody>
-                        <?php foreach($aAlumnos as $alumno) : ?>
-                            <td><?php echo $alumno["nombre"] ?>></td>
-                            <td><?php echo $alumno["Nota 1"] ?>></td>
-                            <td><?php echo $alumno["Nota 2"] ?>></td>
-                            <td><?php echo $alumno["promedio"] ?>></td>
+                    <tr>    
+                    <?php foreach($aAlumnos as $alumno) : ?>
+                            <td><?php echo $alumno["nombre"]; ?>></td>
+                            <td><?php echo $alumno["notas"][0]; ?>></td>
+                            <td><?php echo $alumno["notas"][1]; ?>></td>
+                            <td><?php echo promediar($alumno["notas"]); ?>></td>
+                            <?php endforeach; ?>
+                    </tr>     
                     </tbody>
                 </table>
             </div>
