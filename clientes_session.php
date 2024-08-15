@@ -41,7 +41,7 @@ if (isset($_GET["pos"]) && $_GET["pos"] >= 0) {
     unset($aClientes[$pos]);
     //Actualizar la variable de session con el aClientes actualizado
     $_SESSION["listadoClientes"] = $aClientes;
-    header("Location: prueba.php");
+    header("Location: clientes_session.php");
 }
 
 ?>
